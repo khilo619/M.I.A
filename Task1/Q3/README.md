@@ -171,15 +171,10 @@ class Driver:
 **Design Thinking:**
 - **Data Protection**: Direct modification of critical game stats prevented
 - **Controlled Access**: Properties provide read-only access to internal state
-- **Future-Proofing**: Can add validation logic to setters without breaking existing code
 - **Information Security**: Internal move lists and voice handlers protected from external manipulation
 
 **Advanced Encapsulation Examples:**
 ```python
-# Protected internal methods
-def _validate_move_availability(self, move):
-    return self._fuel >= move.fuel_cost
-
 # Encapsulated complex logic
 def take_damage(self, damage):
     self._tire_health -= damage
@@ -525,3 +520,4 @@ python main.py
 ```
 
 *"Speak your way to victory!"* 🎤🏆
+
